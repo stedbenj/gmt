@@ -1,0 +1,145 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.8.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "pzVTj3KyqzBKHuv92fMSee",
+      "projectApiToken": "uvEDB4pGFGzJx7PKpNcBCG68D4ZXeHWgKK5dnNUWlo8HVuBfdN9r7j8XCnGziMEpRtdMdQSi3wyYFz2ekFxYw",
+      "projectName": "GMT",
+      "version": "latest",
+      "cssFilePath": "plasmic/gmt/plasmic_gmt.module.css",
+      "components": [
+        {
+          "id": "-NwcXZN-prfa",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "pzVTj3KyqzBKHuv92fMSee",
+          "renderModuleFilePath": "plasmic/gmt/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/gmt/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "WYZ_00FUz_-",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "pzVTj3KyqzBKHuv92fMSee",
+          "renderModuleFilePath": "plasmic/gmt/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/gmt/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "MguLprgZJ4",
+          "name": "ReactFlowPlaceholder",
+          "type": "managed",
+          "projectId": "pzVTj3KyqzBKHuv92fMSee",
+          "renderModuleFilePath": "plasmic/gmt/PlasmicReactFlowPlaceholder.tsx",
+          "importSpec": {
+            "modulePath": "ReactFlowPlaceholder.tsx"
+          },
+          "cssFilePath": "plasmic/gmt/PlasmicReactFlowPlaceholder.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "kxfh07Imu5R",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/gmt/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "02U_6EeSozy",
+          "name": "Icon38Icon",
+          "moduleFilePath": "plasmic/gmt/icons/PlasmicIcon__Icon38.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "K0cNOyfBsG4R",
+          "name": "image",
+          "filePath": "plasmic/gmt/images/image.svg"
+        },
+        {
+          "id": "z_AHMXZIF",
+          "name": "Fake Menu.png",
+          "filePath": "plasmic/gmt/images/fakeMenupng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "khh89Dyxtj",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "eHpQ09GX0I",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "NgkOxf_ZibSyh",
+        "name": "Screen",
+        "projectId": "pzVTj3KyqzBKHuv92fMSee",
+        "contextFilePath": "plasmic/gmt/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.198",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.198/dist/plasmic.schema.json"
+}

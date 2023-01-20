@@ -1,0 +1,19 @@
+{
+  "props": [
+    {
+      "name": "LefMenu",
+      "type": "spacing",
+      "value": "280px",
+      "category": "spacing",
+      "meta": {
+        "projectId": "pzVTj3KyqzBKHuv92fMSee",
+        "id": "VtDRrawUM"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}
