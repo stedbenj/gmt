@@ -111,6 +111,11 @@
           "id": "z_AHMXZIF",
           "name": "Fake Menu.png",
           "filePath": "plasmic/gmt/images/fakeMenupng.png"
+        },
+        {
+          "id": "PTPzh_BvC",
+          "name": "ghost-avatar-centered.png",
+          "filePath": "plasmic/gmt/images/ghostAvatarCenteredpng.png"
         }
       ],
       "indirect": false,

@@ -40,7 +40,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_gmt.module.css"; // plasmic-import: pzVTj3KyqzBKHuv92fMSee/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NwcXZN-prfa/css
 
-import fakeMenupngZAhmxzif from "./images/fakeMenupng.png"; // plasmic-import: z_AHMXZIF/picture
+import ghostAvatarCenteredpngPtPzhBvC from "./images/ghostAvatarCenteredpng.png"; // plasmic-import: PTPzh_BvC/picture
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -98,62 +98,63 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       {}
+      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            sty.root
+          )}
+        >
+          {true ? (
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("742px" as const)
+                    : ("667px" as const)
+                }
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"514px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: ghostAvatarCenteredpngPtPzhBvC,
+                  fullWidth: 400,
+                  fullHeight: 400,
+                  aspectRatio: undefined
+                }}
+              />
 
-      <div className={projectcss.plasmic_page_wrapper}>
-        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
-          <div
-            data-plasmic-name={"root"}
-            data-plasmic-override={overrides.root}
-            data-plasmic-root={true}
-            data-plasmic-for-node={forNode}
-            className={classNames(
-              projectcss.all,
-              projectcss.root_reset,
-              projectcss.plasmic_default_styles,
-              projectcss.plasmic_mixins,
-              projectcss.plasmic_tokens,
-              sty.root
-            )}
-          >
-            {true ? (
-              <div
-                data-plasmic-name={"freeBox"}
-                data-plasmic-override={overrides.freeBox}
-                className={classNames(projectcss.all, sty.freeBox)}
-              >
-                <p.PlasmicImg
-                  data-plasmic-name={"img"}
-                  data-plasmic-override={overrides.img}
-                  alt={""}
-                  className={classNames(sty.img)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: fakeMenupngZAhmxzif,
-                    fullWidth: 335,
-                    fullHeight: 1024,
-                    aspectRatio: undefined
-                  }}
-                />
-
-                <ReactFlowPlaceholder
-                  data-plasmic-name={"reactFlowPlaceholder"}
-                  data-plasmic-override={overrides.reactFlowPlaceholder}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.reactFlowPlaceholder
-                  )}
-                />
-              </div>
-            ) : null}
-          </div>
-        ) : null}
-      </div>
+              <ReactFlowPlaceholder
+                data-plasmic-name={"reactFlowPlaceholder"}
+                data-plasmic-override={overrides.reactFlowPlaceholder}
+                className={classNames(
+                  "__wab_instance",
+                  sty.reactFlowPlaceholder
+                )}
+              />
+            </div>
+          ) : null}
+        </div>
+      ) : null}
     </React.Fragment>
   ) as React.ReactElement | null;
 }
