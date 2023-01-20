@@ -41,6 +41,7 @@ import projectcss from "./plasmic_gmt.module.css"; // plasmic-import: pzVTj3Kyqz
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: -NwcXZN-prfa/css
 
 import ghostAvatarCenteredpngPtPzhBvC from "./images/ghostAvatarCenteredpng.png"; // plasmic-import: PTPzh_BvC/picture
+import fakeMenupngZAhmxzif from "./images/fakeMenupng.png"; // plasmic-import: z_AHMXZIF/picture
 
 export type PlasmicHomepage__VariantMembers = {};
 export type PlasmicHomepage__VariantsArgs = {};
@@ -54,7 +55,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
   reactFlowPlaceholder?: p.Flex<typeof ReactFlowPlaceholder>;
 };
 
@@ -98,71 +98,89 @@ function PlasmicHomepage__RenderFunc(props: {
   return (
     <React.Fragment>
       {}
-      {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
-        <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
-          data-plasmic-root={true}
-          data-plasmic-for-node={forNode}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            sty.root
-          )}
-        >
-          {true ? (
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <p.PlasmicImg
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
-                alt={""}
-                className={classNames(sty.img)}
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? ("742px" as const)
-                    : ("667px" as const)
-                }
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"100%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"514px" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: ghostAvatarCenteredpngPtPzhBvC,
-                  fullWidth: 400,
-                  fullHeight: 400,
-                  aspectRatio: undefined
-                }}
-              />
 
-              <ReactFlowPlaceholder
-                data-plasmic-name={"reactFlowPlaceholder"}
-                data-plasmic-override={overrides.reactFlowPlaceholder}
-                className={classNames(
-                  "__wab_instance",
-                  sty.reactFlowPlaceholder
-                )}
-              />
-            </div>
-          ) : null}
-        </div>
-      ) : null}
+      <div className={projectcss.plasmic_page_wrapper}>
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <div
+            data-plasmic-name={"root"}
+            data-plasmic-override={overrides.root}
+            data-plasmic-root={true}
+            data-plasmic-for-node={forNode}
+            className={classNames(
+              projectcss.all,
+              projectcss.root_reset,
+              projectcss.plasmic_default_styles,
+              projectcss.plasmic_mixins,
+              projectcss.plasmic_tokens,
+              sty.root
+            )}
+          >
+            {true ? (
+              <div
+                data-plasmic-name={"freeBox"}
+                data-plasmic-override={overrides.freeBox}
+                className={classNames(projectcss.all, sty.freeBox)}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___9Sh8B)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("742px" as const)
+                      : ("667px" as const)
+                  }
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"514px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: ghostAvatarCenteredpngPtPzhBvC,
+                    fullWidth: 400,
+                    fullHeight: 400,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <ReactFlowPlaceholder
+                  data-plasmic-name={"reactFlowPlaceholder"}
+                  data-plasmic-override={overrides.reactFlowPlaceholder}
+                  className={classNames(
+                    "__wab_instance",
+                    sty.reactFlowPlaceholder
+                  )}
+                />
+              </div>
+            ) : null}
+
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img___2P5In)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              loading={"lazy" as const}
+              src={{
+                src: fakeMenupngZAhmxzif,
+                fullWidth: 335,
+                fullHeight: 1024,
+                aspectRatio: undefined
+              }}
+            />
+          </div>
+        ) : null}
+      </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "img", "reactFlowPlaceholder"],
-  freeBox: ["freeBox", "img", "reactFlowPlaceholder"],
-  img: ["img"],
+  root: ["root", "freeBox", "reactFlowPlaceholder"],
+  freeBox: ["freeBox", "reactFlowPlaceholder"],
   reactFlowPlaceholder: ["reactFlowPlaceholder"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -171,7 +189,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   freeBox: "div";
-  img: typeof p.PlasmicImg;
   reactFlowPlaceholder: typeof ReactFlowPlaceholder;
 };
 
@@ -237,7 +254,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     freeBox: makeNodeComponent("freeBox"),
-    img: makeNodeComponent("img"),
     reactFlowPlaceholder: makeNodeComponent("reactFlowPlaceholder"),
 
     // Metadata about props expected for PlasmicHomepage
